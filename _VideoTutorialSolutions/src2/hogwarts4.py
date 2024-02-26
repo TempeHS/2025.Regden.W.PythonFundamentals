@@ -1,11 +1,11 @@
 # Demonstrates iterating over and index into a dict
 
-students = {
+fruits = {
     "Hermione": "Gryffindor",
     "Harry": "Gryffindor",
     "Ron": "Gryffindor",
     "Draco": "Slytherin",
 }
 
-for student in students:
-    print(student, students[student], sep=", ")
+for fruit in fruits:
+    print(fruit, fruits[fruit], sep=", ")
