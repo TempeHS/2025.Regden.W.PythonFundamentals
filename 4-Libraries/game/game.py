@@ -13,6 +13,8 @@ def main():
                 guess = numguess()
                 if guess > num:
                     print("invalid number")
+                elif guess < int(1):
+                    print("invalid number")
                 elif guess < randnum:
                     print("Too Small!")
                 elif guess > randnum:
@@ -32,7 +34,7 @@ def numguess():
             guess = int(input("guess the number "))
             return guess
         except ValueError:
-            print("invalid num")
+            print("invalid number")
 
 
 main()
