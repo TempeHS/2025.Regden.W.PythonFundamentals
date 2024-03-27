@@ -1,41 +1,23 @@
-def main():
-    plate = input("Plate: ")
-    if is_valid(plate):
-        print("Valid")
-    else:
-        print("Invalid")
-
-
-def is_valid(s):
-    if not has_minimum_length(s):
-        return False
-    if not has_maximum_length(s):
-        return False
-    if not starts_with_letters(s):
-        return False
-    if not has_valid_structure(s):
-        return False
-    return True
-
-
-def has_minimum_length(s):
-    return len(s) >= 2
-
-
-def has_maximum_length(s):
-    return len(s) <= 6
-
-
-def starts_with_letters(s):
-    return s[:2].isalpha()
-
-
-def has_valid_structure(s):
-    if s[-1].isdigit() and s[0].isdigit():
-        return False
-    if s[-1].isdigit() and s[-2].isdigit():
-        return False
-    return True
-
-
-main()
+while True:
+    try:
+        num = input(
+            """
+            1. open
+            2. open
+            3. open
+            4. open
+            (choose one)
+            """
+        )
+        if num == "1":
+            print("blah. blah")
+        elif num == "2":
+            print("bleep")
+        elif num == "3":
+            print("blah")
+        elif num == "4":
+            print("bloop")
+        else:
+            print("not a choice")
+    except EOFError:
+        break
