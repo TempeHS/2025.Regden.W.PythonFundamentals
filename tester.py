@@ -1,38 +1,23 @@
-import random
-
-
-def main():
-    while True:
-        try:
-            num = int(input("level: "))
-            if num < int(1):
-                print("invalid number")
-                continue
-            randnum = random.randint(1, num)
-            while True:
-                guess = numguess()
-                if guess > num:
-                    print("invalid number")
-                elif guess < randnum:
-                    print("Too Small!")
-                elif guess > randnum:
-                    print("Too Large!")
-                    continue
-                else:
-                    print("Just Right!")
-                    break
-            break
-        except ValueError:
-            print("invalid num")
-
-
-def numguess():
-    while True:
-        try:
-            guess = int(input("guess the number "))
-            return guess
-        except ValueError:
-            print("invalid num")
-
-
-main()
+while True:
+    try:
+        num = input(
+            """
+            1. open
+            2. open
+            3. open
+            4. open
+            (choose one)
+            """
+        )
+        if num == "1":
+            print("blah. blah")
+        elif num == "2":
+            print("bleep")
+        elif num == "3":
+            print("blah")
+        elif num == "4":
+            print("bloop")
+        else:
+            print("not a choice")
+    except EOFError:
+        break
