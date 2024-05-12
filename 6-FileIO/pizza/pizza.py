@@ -5,7 +5,6 @@ if len(sys.argv) < 2:
     print("Too few arguments")
     sys.exit
 
-
 elif len(sys.argv) > 2:
     print("Too many arguments")
     sys.exit

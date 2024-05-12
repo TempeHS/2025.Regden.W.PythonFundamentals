@@ -1,0 +1,4 @@
+regden wueji,16,A+
+Regden wueji,16,b
+Odden, Wueji,13,c
+Odden, Wueji,13,d
